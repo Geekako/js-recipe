@@ -14,6 +14,8 @@ const hikakin = {
 
 // 練習問題
 // hikakin オブジェクトに入っている sayHello メソッドを実行してください。
+hikakin.sayHello()
+console.dir(document)
 
 // [やってみよう]
 // hikakin オブジェクト を真似して自分のプロフィールをオブジェクトで作ってください。
