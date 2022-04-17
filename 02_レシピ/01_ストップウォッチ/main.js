@@ -10,8 +10,20 @@ const countUp = function () {
   display.textContent = count / 100
 }
 
+let id = null
+
 button.onclick = function () {
   //10msごとにcountUpを実行するように登録
-  setInterval(countUp, 10)
-  button.textContent = "stop"
+  //setInterval(countUp, 10)
+  //button.textContent = "stop"
+  if (id === null) {
+    //start
+    id = setInterval(countUp, 10)
+    button.textContent = "stop"
+  } else {
+    //stop
+    clearInterval(id)
+    id = null
+    button.textContent = "start"
+  }
 }
